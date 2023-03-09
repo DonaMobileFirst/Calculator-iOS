@@ -12,6 +12,7 @@ class TrigonoCalcViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("The action need to perfom")
     }
 
     override func didReceiveMemoryWarning() {
