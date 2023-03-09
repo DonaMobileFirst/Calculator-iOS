@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     
     @IBAction func operation(_ sender: Any) {
         if(!isOperationTapped){
+            print("This is how the operation works.")
             firstNumber = String(lastNumber)
             keyPressed = "0"
             lastNumber = 0
@@ -62,7 +63,7 @@ class ViewController: UIViewController {
             else if(previousOperator == "/"){
                 if lastNumber == 0{
                     
-                    let alert = UIAlertController(title: "Alert", message: "Invalid Action!", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Alert", message: "Invalid Action Happpens!", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }else{
